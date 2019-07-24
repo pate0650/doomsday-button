@@ -1,0 +1,164 @@
+@keyframes pulse {
+
+  0%,
+  100% {
+    box-shadow:
+      0px 0px 10px 3px rgba(255, 0, 0, 0.4),
+      0 0 0 8px #D6D5DB,
+      0 0 0 18px #96989E;
+  }
+
+
+  25%,
+  75% {
+    box-shadow:
+      0px 0px 10px 8px rgba(255, 0, 0, 0.8),
+      0 0 0 8px #D6D5DB,
+      0 0 0 18px #96989E;
+  }
+}
+
+@keyframes wave {
+
+  0%,
+  100% {
+    background-image: radial-gradient(ellipse at center, #ff0505 10%, #960910 85%, #960910 85%);
+  }
+
+  10%,
+  90% {
+    background-image: radial-gradient(ellipse at center, #ff0505 20%, #960910 85%, #960910 85%);
+  }
+
+  20%,
+  80% {
+    background-image: radial-gradient(ellipse at center, #ff0505 30%, #960910 85%, #960910 85%);
+  }
+
+  30%,
+  70% {
+    background-image: radial-gradient(ellipse at center, #ff0505 40%, #960910 85%, #960910 85%);
+  }
+
+  40%,
+  60% {
+    background-image: radial-gradient(ellipse at center, #ff0505 50%, #960910 85%, #960910 85%);
+  }
+
+  50% {
+    background-image: radial-gradient(ellipse at center, #ff0505 60%, #960910 85%, #960910 85%);
+  }
+}
+
+@keyframes implode {
+  0% {
+    transform: scale(1);
+  }
+
+  20%,
+  40% {
+    transform: scale(10);
+  }
+
+  60%,
+  80% {
+    transform: scale(0.01);
+  }
+
+  80% {
+    transform: scale(0.01);
+    opacity: 1;
+    background: transparent;
+    /* box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.9); */
+  }
+
+  100% {
+    transform: scale(0.01);
+    opacity: 0;
+    background: rgba;
+    /* box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.0); */
+  }
+
+}
+@keyframes gary{
+    
+  0% {
+    margin-top: -48px;
+      background-image: radial-gradient(ellipse at center, #6495ED 40%, #960910 85%, #960910 85%);
+  
+  }
+  50% {
+    opacity: 0;
+    margin-top: 48px;
+      background-image: radial-gradient(ellipse at center, #6495ED 40%, #960910 85%, #960910 85%);
+  
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+      background-image: radial-gradient(ellipse at center, #6495ED 40%, #960910 85%, #960910 85%);
+  
+  }
+}
+
+@keyframes tada{ 
+    
+  0% {
+    margin-top: -48px;
+      background-image: radial-gradient(ellipse at center, #6495ED 40%, #960910 85%, #960910 85%);
+  
+  }
+  50% {
+    opacity: 0;
+    margin-top: 48px;
+      background-image: radial-gradient(ellipse at center, #6495ED 40%, #960910 85%, #960910 85%);
+  
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+      background-image: radial-gradient(ellipse at center, #6495ED 40%, #960910 85%, #960910 85%);
+  
+  }
+}
+
+
+.doomsday {
+  animation: pulse 2s infinite backwards;
+    animation-name: gary;
+    animation-duration: 3s;
+    animation-delay: 1000ms;
+    animation-iteration-count: 4;
+    border-color: darksalmon;
+   
+}
+.coffee:hover:after{
+    content: "Enjoy Coffee";
+    font-size: 1.5rem;
+    color:black;
+    text-shadow: 2px 2px;
+    background-color: white;
+    box-shadow: 5px 8px;
+
+    
+}
+.doomsday:hover:after {
+    
+  
+    content: "perss Button";
+    font-size: 1.5rem;
+    color:black;
+    text-shadow: 2px 2px;
+    background-color: white;
+    box-shadow: 5px 8px;
+    border-width: 0.5rem;
+}
+
+
+.doomsday:active {
+  animation-name: tada,wave;
+  animation-duration: 0.2s, 5s;
+  animation-iteration-count: infinite, 1;
+  animation-delay: 0s, 3s;
+  animation-fill-mode: backwards, forwards;
+}
